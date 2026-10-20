@@ -1,0 +1,385 @@
+﻿<Rive version="1" kind="fragment">
+    <!-- Orangutan astronaut waving hello. Siblings draw first-declared-on-top. -->
+    <Artboard defaultStateMachineId="0:7" styleId="0:5" width="500" height="540" name="Orangutan" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+
+        <Fill name="Background">
+            <SolidColor colorValue="FFF8F8FC" name="Color"/>
+        </Fill>
+
+        <!-- Sparks next to the waving hand -->
+        <Node x="438" y="140" name="Sparks" id="0:20">
+            <Shape x="0" y="0" rotation="0.3" name="Spark A">
+                <Rectangle width="15" height="46" cornerRadiusTL="7.5" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFF9B42D" name="C"/></Fill>
+            </Shape>
+            <Shape x="34" y="42" rotation="0.95" name="Spark B">
+                <Rectangle width="15" height="36" cornerRadiusTL="7.5" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFF9B42D" name="C"/></Fill>
+            </Shape>
+        </Node>
+
+        <!-- Waving arm: pivots at the shoulder, hand pivots at the wrist -->
+        <Node x="334" y="352" rotation="0.5" name="Arm R" id="0:50">
+            <Node x="0" y="-128" rotation="0.2" name="Hand R" id="0:51">
+                <Shape x="0" y="-26" name="Palm">
+                    <Ellipse width="60" height="56" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+                </Shape>
+                <Shape x="-31" y="-28" rotation="-0.75" name="Thumb">
+                    <Rectangle width="17" height="32" cornerRadiusTL="8.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+                </Shape>
+                <Shape x="-16" y="-54" rotation="-0.15" name="Finger 1">
+                    <Rectangle width="17" height="34" cornerRadiusTL="8.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+                </Shape>
+                <Shape x="1" y="-60" name="Finger 2">
+                    <Rectangle width="17" height="36" cornerRadiusTL="8.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+                </Shape>
+                <Shape x="18" y="-54" rotation="0.18" name="Finger 3">
+                    <Rectangle width="17" height="32" cornerRadiusTL="8.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+                </Shape>
+            </Node>
+            <Shape x="0" y="-118" name="Cuff R">
+                <Rectangle width="56" height="16" cornerRadiusTL="8" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+            </Shape>
+            <Shape x="0" y="0" name="Sleeve R">
+                <Rectangle width="50" height="134" originY="0.9" cornerRadiusTL="25" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+            </Shape>
+        </Node>
+
+        <!-- Head: helmet + face, pivoting at the neck -->
+        <Node x="250" y="330" name="Head" id="0:30">
+            <Shape x="-140" y="-105" name="Headphone L">
+                <Ellipse width="58" height="96" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+            </Shape>
+            <Shape x="140" y="-105" name="Headphone R">
+                <Ellipse width="58" height="96" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+            </Shape>
+            <Shape x="0" y="0" name="Helmet Band">
+                <PointsPath isClosed="false" name="Path">
+                    <StraightVertex x="-115" y="-160"/>
+                    <CubicMirroredVertex x="0" y="-232" rotation="0" distance="72"/>
+                    <StraightVertex x="115" y="-160"/>
+                </PointsPath>
+                <Stroke thickness="10" cap="round" name="Stroke">
+                    <SolidColor colorValue="FFF5822A" name="C"/>
+                </Stroke>
+            </Shape>
+
+            <!-- Face inside the visor -->
+            <Node x="0" y="-106" name="Face" id="0:40">
+                <Node x="-28" y="-2" name="Eye L" id="0:41">
+                    <Shape x="5" y="-5" name="Glint">
+                        <Ellipse width="7" height="7" name="Path"/>
+                        <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    </Shape>
+                    <Shape name="Pupil">
+                        <Ellipse width="20" height="25" name="Path"/>
+                        <Fill name="Fill"><SolidColor colorValue="FF24204F" name="C"/></Fill>
+                    </Shape>
+                </Node>
+                <Node x="28" y="-2" name="Eye R" id="0:42">
+                    <Shape x="5" y="-5" name="Glint">
+                        <Ellipse width="7" height="7" name="Path"/>
+                        <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                    </Shape>
+                    <Shape name="Pupil">
+                        <Ellipse width="20" height="25" name="Path"/>
+                        <Fill name="Fill"><SolidColor colorValue="FF24204F" name="C"/></Fill>
+                    </Shape>
+                </Node>
+                <Shape x="-30" y="-26" rotation="-0.3" name="Brow L">
+                    <Rectangle width="18" height="5" cornerRadiusTL="2.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFC2551C" name="C"/></Fill>
+                </Shape>
+                <Shape x="30" y="-26" rotation="0.3" name="Brow R">
+                    <Rectangle width="18" height="5" cornerRadiusTL="2.5" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFC2551C" name="C"/></Fill>
+                </Shape>
+                <Shape x="0" y="16" name="Nose">
+                    <Ellipse x="-5" width="5" height="4" name="Path"/>
+                    <Ellipse x="5" width="5" height="4" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FF8A4A2A" name="C"/></Fill>
+                </Shape>
+                <Shape x="0" y="28" name="Tongue">
+                    <Ellipse y="17" width="22" height="11" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFE8637A" name="C"/></Fill>
+                    <ClippingShape sourceId="0:45" name="Clip"/>
+                </Shape>
+                <Shape x="0" y="28" name="Mouth" id="0:45">
+                    <PointsPath isClosed="true" name="Path">
+                        <StraightVertex x="-19" y="0" radius="3"/>
+                        <StraightVertex x="19" y="0" radius="3"/>
+                        <CubicMirroredVertex x="0" y="24" rotation="3.1415927" distance="13"/>
+                    </PointsPath>
+                    <Fill name="Fill"><SolidColor colorValue="FF3B1F3A" name="C"/></Fill>
+                </Shape>
+                <Shape x="-47" y="22" opacity="0.75" name="Cheek L">
+                    <Ellipse width="24" height="15" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFF4917A" name="C"/></Fill>
+                </Shape>
+                <Shape x="47" y="22" opacity="0.75" name="Cheek R">
+                    <Ellipse width="24" height="15" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFF4917A" name="C"/></Fill>
+                </Shape>
+                <Shape x="0" y="0" name="Face Skin">
+                    <Ellipse y="16" width="124" height="104" name="Path"/>
+                    <Ellipse x="-27" y="-6" width="64" height="60" name="Path"/>
+                    <Ellipse x="27" y="-6" width="64" height="60" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFF9C08C" name="C"/></Fill>
+                </Shape>
+                <Shape x="0" y="0" name="Head Fur">
+                    <Ellipse y="4" width="172" height="150" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFE8712B" name="C"/></Fill>
+                </Shape>
+                <Shape x="0" y="-70" name="Tuft">
+                    <PointsPath isClosed="true" name="Path">
+                        <StraightVertex x="-26" y="8"/>
+                        <CubicDetachedVertex x="-6" y="-18" inRotation="2.4" inDistance="10" outRotation="-0.6" outDistance="8"/>
+                        <CubicDetachedVertex x="6" y="-6" inRotation="-2.2" inDistance="6" outRotation="-0.9" outDistance="10"/>
+                        <CubicDetachedVertex x="22" y="-14" inRotation="-2.6" inDistance="8" outRotation="1.6" outDistance="10"/>
+                        <StraightVertex x="26" y="8"/>
+                    </PointsPath>
+                    <Fill name="Fill"><SolidColor colorValue="FFE8712B" name="C"/></Fill>
+                </Shape>
+                <Shape x="-84" y="10" name="Ear L Inner">
+                    <Ellipse width="17" height="22" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFF9C08C" name="C"/></Fill>
+                </Shape>
+                <Shape x="-84" y="10" name="Ear L">
+                    <Ellipse width="32" height="40" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFE8712B" name="C"/></Fill>
+                </Shape>
+                <Shape x="84" y="10" name="Ear R Inner">
+                    <Ellipse width="17" height="22" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFF9C08C" name="C"/></Fill>
+                </Shape>
+                <Shape x="84" y="10" name="Ear R">
+                    <Ellipse width="32" height="40" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFE8712B" name="C"/></Fill>
+                </Shape>
+            </Node>
+
+            <Shape x="-48" y="-178" rotation="-0.6" opacity="0.35" name="Visor Shine">
+                <Ellipse width="34" height="12" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FF8F8BD6" name="C"/></Fill>
+            </Shape>
+            <Shape x="0" y="-112" name="Visor">
+                <Ellipse width="206" height="190" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FF2B2862" name="C"/></Fill>
+            </Shape>
+            <Shape x="0" y="-120" name="Helmet">
+                <Ellipse width="282" height="256" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+            </Shape>
+        </Node>
+
+        <Shape x="250" y="330" name="Collar">
+            <Ellipse width="150" height="34" name="Path"/>
+            <Stroke thickness="8" name="Stroke"><SolidColor colorValue="FFF5822A" name="C"/></Stroke>
+        </Shape>
+
+        <!-- Laptop with </> -->
+        <Node x="258" y="428" rotation="-0.1" name="Laptop">
+            <Shape name="Code">
+                <PointsPath isClosed="false" name="Path">
+                    <StraightVertex x="-24" y="-13"/>
+                    <StraightVertex x="-38" y="0"/>
+                    <StraightVertex x="-24" y="13"/>
+                </PointsPath>
+                <PointsPath isClosed="false" name="Path">
+                    <StraightVertex x="7" y="-18"/>
+                    <StraightVertex x="-7" y="18"/>
+                </PointsPath>
+                <PointsPath isClosed="false" name="Path">
+                    <StraightVertex x="24" y="-13"/>
+                    <StraightVertex x="38" y="0"/>
+                    <StraightVertex x="24" y="13"/>
+                </PointsPath>
+                <Stroke thickness="7" cap="round" join="round" name="Stroke">
+                    <SolidColor colorValue="FFFFFFFF" name="C"/>
+                </Stroke>
+            </Shape>
+            <Shape name="Lid">
+                <Rectangle width="150" height="102" cornerRadiusTL="12" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FF2B2862" name="C"/></Fill>
+                <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FF46439A" name="C"/></Stroke>
+            </Shape>
+        </Node>
+
+        <!-- Left arm resting on the laptop -->
+        <Shape x="196" y="452" name="Glove L">
+            <Ellipse width="50" height="42" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+            <Stroke thickness="5" name="Stroke"><SolidColor colorValue="FF2B2862" name="C"/></Stroke>
+        </Shape>
+        <Shape x="178" y="420" rotation="-0.55" name="Cuff L">
+            <Rectangle width="52" height="14" cornerRadiusTL="7" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+        </Shape>
+        <Shape x="166" y="398" rotation="-0.55" name="Sleeve L">
+            <Rectangle width="48" height="92" cornerRadiusTL="24" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+            <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+        </Shape>
+
+        <!-- Legs -->
+        <Shape x="176" y="500" rotation="0.15" name="Boot L">
+            <Ellipse width="62" height="74" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FF2B2862" name="C"/></Fill>
+        </Shape>
+        <Shape x="336" y="500" rotation="-0.15" name="Boot R">
+            <Ellipse width="62" height="74" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FF2B2862" name="C"/></Fill>
+        </Shape>
+        <Shape x="206" y="478" name="Leg Band L">
+            <Rectangle width="14" height="56" cornerRadiusTL="7" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+        </Shape>
+        <Shape x="306" y="478" name="Leg Band R">
+            <Rectangle width="14" height="56" cornerRadiusTL="7" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFF5822A" name="C"/></Fill>
+        </Shape>
+        <Shape x="200" y="478" name="Leg L">
+            <Rectangle width="90" height="64" cornerRadiusTL="30" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+            <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+        </Shape>
+        <Shape x="312" y="478" name="Leg R">
+            <Rectangle width="90" height="64" cornerRadiusTL="30" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+            <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+        </Shape>
+
+        <Shape x="250" y="398" name="Body">
+            <Rectangle width="184" height="150" cornerRadiusTL="62" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+            <Stroke thickness="4" name="Stroke"><SolidColor colorValue="FFE4E3F3" name="C"/></Stroke>
+        </Shape>
+
+        <Shape x="168" y="380" name="Backpack">
+            <Rectangle width="80" height="150" cornerRadiusTL="34" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FF2B2862" name="C"/></Fill>
+        </Shape>
+
+        <!-- Each layer plays one looping timeline -->
+        <StateMachine name="State Machine 1" id="0:7">
+            <StateMachineLayer name="Wave" id="0:8">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:12"/>
+                </EntryState>
+                <AnimationState x="200" animationId="0:6" id="0:12"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Blink" id="0:9">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:13"/>
+                </EntryState>
+                <AnimationState x="200" animationId="0:60" id="0:13"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Sparks" id="0:10">
+                <AnyState x="200" y="-120"/>
+                <ExitState x="400" y="-120"/>
+                <EntryState>
+                    <StateTransition stateToId="0:14"/>
+                </EntryState>
+                <AnimationState x="200" animationId="0:70" id="0:14"/>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <!-- Two waves per 1.6s loop; hand lags the arm, head bobs along -->
+        <LinearAnimation loopValue="loop" duration="96" name="Wave" id="0:6">
+            <KeyedObject objectId="0:50">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble frame="0" value="0.5" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="24" value="0.88" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="0.5" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="72" value="0.88" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="96" value="0.5" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:51">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble frame="0" value="0.3" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="28" value="-0.35" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="52" value="0.3" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="76" value="-0.35" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="96" value="0.3" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:30">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble frame="0" value="-0.03" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="0.05" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="96" value="-0.03" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="y">
+                    <KeyFrameDouble frame="0" value="330" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="24" value="325" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="330" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="72" value="325" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="96" value="330" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <!-- Quick blink once every 3s -->
+        <LinearAnimation loopValue="loop" duration="180" name="Blink" id="0:60">
+            <KeyedObject objectId="0:41">
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble frame="0" value="1" interpolationType="hold"/>
+                    <KeyFrameDouble frame="150" value="1" interpolationType="linear"/>
+                    <KeyFrameDouble frame="155" value="0.1" interpolationType="linear"/>
+                    <KeyFrameDouble frame="161" value="1" interpolationType="hold"/>
+                </KeyedProperty>
+            </KeyedObject>
+            <KeyedObject objectId="0:42">
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble frame="0" value="1" interpolationType="hold"/>
+                    <KeyFrameDouble frame="150" value="1" interpolationType="linear"/>
+                    <KeyFrameDouble frame="155" value="0.1" interpolationType="linear"/>
+                    <KeyFrameDouble frame="161" value="1" interpolationType="hold"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <!-- Sparks pop at each wave peak -->
+        <LinearAnimation loopValue="loop" duration="48" name="Sparks" id="0:70">
+            <KeyedObject objectId="0:20">
+                <KeyedProperty property="scaleX">
+                    <KeyFrameDouble frame="0" value="0.6" interpolationType="cubic"><CubicEaseInterpolator x1="0.34" y1="1.56" x2="0.64" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="24" value="1.1" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="0.6" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble frame="0" value="0.6" interpolationType="cubic"><CubicEaseInterpolator x1="0.34" y1="1.56" x2="0.64" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="24" value="1.1" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="0.6" interpolationType="linear"/>
+                </KeyedProperty>
+                <KeyedProperty property="opacity">
+                    <KeyFrameDouble frame="0" value="0.25" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="20" value="1" interpolationType="cubic"><CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble frame="48" value="0.25" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+</Rive>
