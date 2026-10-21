@@ -1,0 +1,37 @@
+{
+  "brand": "Zeuniverse",
+  "tagline": "Belajar seru bareng Otan",
+  "brief": "Ikon aplikasi bergaya Duolingo untuk Zeuniverse: wajah maskot memenuhi tile, mudah dikenali di home screen, ramah anak, dan berasal dari karakter Otan si orangutan astronot.",
+  "adjectives": ["ceria", "ramah", "berani", "penasaran"],
+  "criteria": "Langsung dikenali sebagai Otan, terbaca di 16 px, berwarna orange, punya versi satu warna, dan bisa dikembangkan jadi set ekspresi.",
+  "industry": "education",
+  "mockups": ["app-icon", "website", "social", "sticker", "tshirt", "badge"],
+  "nav": ["Kelas", "Karakter", "Mulai"],
+  "brand_color": "#F5822A",
+  "tile_color": "#F5822A",
+  "greyscale": false,
+  "final": true,
+  "concepts": [
+    {
+      "name": "Otan Tile",
+      "symbol": "../master/zeuniverse-icon.svg",
+      "symbol_on_tile": "../master/zeuniverse-face.svg",
+      "symbol_on_dark": "../master/zeuniverse-icon.svg",
+      "avatar": "../master/zeuniverse-icon.svg",
+      "lockup": "../master/zeuniverse-horizontal.svg",
+      "lockup_on_dark": "../master/zeuniverse-horizontal-white.svg",
+      "stacked": "../master/zeuniverse-stacked.svg",
+      "stacked_on_tile": "../master/zeuniverse-stacked-white.svg",
+      "stacked_on_dark": "../master/zeuniverse-stacked-white.svg",
+      "idea": "Tile orange adalah kepala Otan: wajahnya memenuhi ikon, persis seperti cara Duolingo memakai maskotnya.",
+      "rationale": [
+        "Masker wajah dua lobus dan jambul runcing jadi ciri khas Otan yang tidak dimiliki maskot lain",
+        "Versi kecil tanpa detail kecil tetap terbaca sebagai wajah di 16 px",
+        "Wordmark rounded custom dengan titik i berwarna orange",
+        "Set ekspresi (senang, kedip, kaget, astronot) siap untuk notifikasi dan event"
+      ]
+    }
+  ],
+  "recommendation": "Pakai ikon tile sebagai app icon dan avatar, lockup horizontal untuk header, versi kecil untuk favicon.",
+  "next_steps": ["Uji di home screen HP sungguhan", "Cek merek dagang", "Animasikan ekspresi di Rive"]
+}
